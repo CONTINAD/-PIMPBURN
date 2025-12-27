@@ -2,7 +2,7 @@
 
 // Copy Contract Address Function
 function copyCA() {
-    const ca = 'E1gTuYPfcEsMikVoeycJQDL7MMpMLywnuXdUhCiApimp';
+    const ca = 'GvEjpHiVS1kbb1wPQtsQkn6SQ51AD1ApGQZggxaZpimp';
     navigator.clipboard.writeText(ca).then(() => {
         const caText = document.getElementById('ca-text');
         const originalText = caText.textContent;
@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileMenu();
     
     console.log('🔥 PIMPBURN Website Loaded!');
-    console.log('💊 CA: E1gTuYPfcEsMikVoeycJQDL7MMpMLywnuXdUhCiApimp');
+    console.log('💊 CA: GvEjpHiVS1kbb1wPQtsQkn6SQ51AD1ApGQZggxaZpimp');
 });
 
 // Easter Egg - Konami Code
