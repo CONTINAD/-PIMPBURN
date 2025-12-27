@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$PIMPBURN - 100% Buyback & Burn</title>
+    <meta name="description" content="PIMPBURN - The ultimate deflationary token. 100% of all creator fees are used for buybacks and burns. Launched on PimpFun.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="flame flame-1"></div>
+        <div class="flame flame-2"></div>
+        <div class="flame flame-3"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">💊🔥</span>
+                <span class="logo-text">PIMPBURN</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#tokenomics">Tokenomics</a>
+                <a href="#burn">The Burn</a>
+                <a href="#community">Community</a>
+            </div>
+            <a href="https://pimpfun.app" target="_blank" class="buy-btn">Buy Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="pill-container">
+                <div class="pill-glow"></div>
+                <img src="https://ipfs.io/ipfs/QmW8ypf3pRFgHqwwrfYMBbb5nPg3v7v8HchQMBK9rpbwmK" alt="PIMPBURN Logo" class="hero-logo">
+            </div>
+            <h1 class="hero-title">
+                <span class="title-main">$PIMPBURN</span>
+                <span class="title-sub">100% BUYBACK. 100% BURN.</span>
+            </h1>
+            <p class="hero-desc">The ultimate deflationary token where every single fee goes straight back to burning the supply. No reflections. No dev wallets. Just pure, relentless burns.</p>
+            <div class="hero-buttons">
+                <a href="https://pimpfun.app" target="_blank" class="btn btn-primary">
+                    <span>🔥 Buy on PimpFun</span>
+                </a>
+                <button class="btn btn-secondary" onclick="copyCA()">
+                    <span id="ca-text">📋 Copy CA</span>
+                </button>
+            </div>
+            <div class="contract-address">
+                <span class="ca-label">Contract Address:</span>
+                <code id="contract-address">E1gTuYPfcEsMikVoeycJQDL7MMpMLywnuXdUhCiApimp</code>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="stat-item">
+            <span class="stat-value" data-value="1000000000">1,000,000,000</span>
+            <span class="stat-label">Total Supply</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <span class="stat-value highlight">100%</span>
+            <span class="stat-label">Fees → Buyback</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <span class="stat-value highlight">0%</span>
+            <span class="stat-label">Dev Allocation</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+            <span class="stat-value">SOLANA</span>
+            <span class="stat-label">Blockchain</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-accent">💊</span>
+                What is PIMPBURN?
+            </h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">🔥</div>
+                    <h3>Pure Deflation</h3>
+                    <p>Every single transaction generates fees that go directly to buying back and burning tokens. No exceptions, no middlemen.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">💎</div>
+                    <h3>Fair Launch</h3>
+                    <p>Launched on PimpFun with complete transparency. No dev allocation, no insider tokens, no presales.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🚀</div>
+                    <h3>Community Driven</h3>
+                    <p>100% owned by the community. Every holder benefits equally from the deflationary mechanism.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Solana Speed</h3>
+                    <p>Built on Solana for lightning-fast transactions and minimal fees. Trade instantly, burn constantly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="burn" class="burn-section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-accent">🔥</span>
+                The Burn Mechanism
+            </h2>
+            <div class="burn-flow">
+                <div class="flow-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Trading Happens</h3>
+                        <p>Users buy and sell $PIMPBURN on PimpFun or other DEXs</p>
+                    </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Fees Collected</h3>
+                        <p>Creator rewards from trades are automatically collected</p>
+                    </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Buyback Executed</h3>
+                        <p>100% of fees are used to buy back $PIMPBURN from the market</p>
+                    </div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step highlight-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Tokens Burned</h3>
+                        <p>All bought tokens are sent to burn address - forever removed</p>
+                    </div>
+                    <div class="burn-animation">
+                        <span>🔥</span>
+                    </div>
+                </div>
+            </div>
+            <div class="burn-wallet">
+                <span class="wallet-label">Buyback Wallet:</span>
+                <code>9fuv2oPMKdYSQ1xNBNqVebAXw6pyYfUBhqJ1JWk66mH2</code>
+                <a href="https://solscan.io/account/9fuv2oPMKdYSQ1xNBNqVebAXw6pyYfUBhqJ1JWk66mH2" target="_blank" class="verify-link">Verify on Solscan →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="tokenomics-section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-accent">📊</span>
+                Tokenomics
+            </h2>
+            <div class="tokenomics-grid">
+                <div class="tokenomics-chart">
+                    <div class="chart-ring">
+                        <div class="chart-center">
+                            <span class="chart-value">100%</span>
+                            <span class="chart-label">Buyback</span>
+                        </div>
+                    </div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="legend-dot burn"></span>
+                            <span>Buyback & Burn: 100%</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-dot dev"></span>
+                            <span>Deployer: 0%</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-dot ref"></span>
+                            <span>Reflections: 0%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tokenomics-details">
+                    <div class="detail-card">
+                        <div class="detail-header">
+                            <span class="detail-icon">💰</span>
+                            <h3>Total Supply</h3>
+                        </div>
+                        <p class="detail-value">1,000,000,000</p>
+                        <p class="detail-desc">One billion $PIMPBURN tokens at launch</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-header">
+                            <span class="detail-icon">🔥</span>
+                            <h3>Fee Distribution</h3>
+                        </div>
+                        <p class="detail-value">100% → Burn</p>
+                        <p class="detail-desc">All creator fees used for buybacks and burns</p>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-header">
+                            <span class="detail-icon">🎯</span>
+                            <h3>Goal</h3>
+                        </div>
+                        <p class="detail-value">DEX @ 25K</p>
+                        <p class="detail-desc">Community targeting DexScreener trending at $25K MC</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="community-section">
+        <div class="section-container">
+            <h2 class="section-title">
+                <span class="title-accent">🤝</span>
+                Join The Community
+            </h2>
+            <p class="community-desc">Be part of the PIMPBURN movement. Join our X community for updates, memes, and burn announcements.</p>
+            <div class="community-links">
+                <a href="https://x.com/i/communities/2004743658981949769" target="_blank" class="social-card x-card">
+                    <div class="social-icon">𝕏</div>
+                    <div class="social-info">
+                        <h3>X Community</h3>
+                        <p>Join the conversation</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="https://solscan.io/token/E1gTuYPfcEsMikVoeycJQDL7MMpMLywnuXdUhCiApimp" target="_blank" class="social-card solscan-card">
+                    <div class="social-icon">◎</div>
+                    <div class="social-info">
+                        <h3>Solscan</h3>
+                        <p>View token details</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </a>
+                <a href="https://pimpfun.app" target="_blank" class="social-card pimpfun-card">
+                    <div class="social-icon">💊</div>
+                    <div class="social-info">
+                        <h3>PimpFun</h3>
+                        <p>Trade $PIMPBURN</p>
+                    </div>
+                    <span class="arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span>💊🔥</span>
+                <span>PIMPBURN</span>
+            </div>
+            <p class="footer-disclaimer">$PIMPBURN is a meme token for entertainment purposes. Always DYOR. Not financial advice.</p>
+            <div class="footer-links">
+                <a href="https://x.com/i/communities/2004743658981949769" target="_blank">X Community</a>
+                <span>•</span>
+                <a href="https://solscan.io/token/E1gTuYPfcEsMikVoeycJQDL7MMpMLywnuXdUhCiApimp" target="_blank">Solscan</a>
+                <span>•</span>
+                <a href="https://pimpfun.app" target="_blank">PimpFun</a>
+            </div>
+            <p class="copyright">© 2024 PIMPBURN. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
